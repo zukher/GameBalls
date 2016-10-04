@@ -104,8 +104,8 @@ bool Board::setObjects(Object object, int countObjects,
 
     for (int k = 1; k <= countObjects; ++k)
     {
-        int i = listOptions.takeFirst().toInt() - 1;
         int j = listOptions.takeFirst().toInt() - 1;
+        int i = listOptions.takeFirst().toInt() - 1;
 
         if (isValidPosition(i, j) && _board[i][j]->noObject())
             _board[i][j]->setObject(object, k);
@@ -126,10 +126,10 @@ bool Board::setWalls(int countWalls, QStringList &listOptions)
 
     for (int k = 1; k <= countWalls; ++k)
     {
-        int i1 = listOptions.takeFirst().toInt() - 1;
         int j1 = listOptions.takeFirst().toInt() - 1;
-        int i2 = listOptions.takeFirst().toInt() - 1;
+        int i1 = listOptions.takeFirst().toInt() - 1;
         int j2 = listOptions.takeFirst().toInt() - 1;
+        int i2 = listOptions.takeFirst().toInt() - 1;
 
         if (isValidPosition(i1, j1) &&
                 isValidPosition(i2, j2))

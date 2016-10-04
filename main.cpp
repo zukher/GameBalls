@@ -1,4 +1,3 @@
-#include <iostream>
 #include "GamePlay.h"
 #include <QFile>
 
